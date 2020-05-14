@@ -5,7 +5,7 @@ import LawButtons from "./Buttons";
 import Modal from "./Modal";
 
 import "../styles/MapContainer.scss";
-// import features from "../data/geo.json";
+import features from "../data/geo.json";
 import axios from "axios";
 
 const position = [0, 0];
@@ -189,7 +189,7 @@ export default class MapContainer extends Component {
 
           {this.state.isLawSelected && (
             <GeoJSON
-              data={this.state.geoInfo}
+              data={features}
               style={this.lawGeoStyle}
               onEachFeature={this.onEachFeature}
               ref={this.geoRef}
