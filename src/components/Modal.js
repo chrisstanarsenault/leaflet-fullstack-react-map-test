@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "../styles/Modal.scss";
-import { isInaccessible } from "@testing-library/react";
 
 export default class Modal extends Component {
   constructor(props) {
